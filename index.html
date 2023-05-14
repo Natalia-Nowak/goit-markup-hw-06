@@ -438,11 +438,82 @@
             </li>
           </ul>
         </div>
+        <div class="container-footer-sm">
+          <h4 class="header-footer">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+          <form class="form-footer">
+            <input
+              class="input-footer"
+              placeholder="E-mail"
+              type="email"
+              name="E-mail"
+              required
+            />
+            <button class="button-newsletter" type="submit">
+              Zapisz się<svg width="24px" height="24px" class="send-icon">
+                <use href="./images/icons.svg#icon-send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-modal" data-modal-close>
+        <form class="modal-form">
+          <p class="form-title-primary">
+            Zostaw swoje dane w formularzu poniżej
+          </p>
+          <label class="form-title-secondary" for="name">Imię</label>
+          <label class="form-input">
+            <svg width="12px" height="12px" class="modal-icons">
+              <use href="./images/icons.svg#icon-person-modal"></use>
+            </svg>
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label class="form-title-secondary" for="phone">Telefon</label>
+          <label class="form-input">
+            <svg width="13px" height="13px" class="modal-icons">
+              <use href="./images/icons.svg#icon-telephone-modal"></use>
+            </svg>
+            <input type="tel" name="phone" id="phone" />
+          </label>
+          <label class="form-title-secondary" for="email">Email</label>
+          <label class="form-input">
+            <svg width="15px" height="12px" class="modal-icons">
+              <use href="./images/icons.svg#icon-envelope-modal"></use>
+            </svg>
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label class="form-title-secondary" for="comment">Komentarz</label>
+          <textarea
+            class="form-input-comment"
+            id="comment"
+            name="comment"
+            rows="5"
+            placeholder="Wprowadź tekst"
+          ></textarea>
+          <div class="form-checkbox">
+            <label class="checkbox-control">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="check"
+                name="check"
+                value="1"
+              />
+              <label class="checkbox-label" for="check"></label>
+              <div>
+                Oświadczam iż akceptuję
+                <a class="policy-link" href="#">Regulamin</a> i
+                <a class="policy-link" href="#">Politykę Prywatności.</a>
+              </div>
+            </label>
+          </div>
+          <div class="button-modal-submit-box">
+            <button class="button-modal-submit" type="submit">Wyślij</button>
+          </div>
+        </form>
+        <button class="button-modal-close" data-modal-close>
           <svg width="30px" height="30px" class="button-modal-icon">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
